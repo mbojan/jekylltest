@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Testing RMarkdown"
+categories: jekyll RMarkdown
+---
+
+This is a test of RMarkdown
+
+Some code
+
+```{r}
+x <- rnorm(100)
+head(x)
+```
+
+And a picture
+
+```{r pic}
+plot(x)
+```
