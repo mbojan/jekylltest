@@ -18,3 +18,13 @@ And a picture
 ```{r pic}
 plot(x)
 ```
+
+And some inline math $\sum_{i=1}^N x_{i}$
+
+Displaued math
+
+$$\sum_{i=1}^N x_{i}$$
+
+End.
+
+...
