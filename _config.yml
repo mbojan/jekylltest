@@ -9,14 +9,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: mbojan
 github_username:  mbojan
-gems:
-        - jekyll-pandoc
-
-# Build settings
-markdown: pandoc
+gems: ['jekyll-pandoc-multiple-formats']
 
 pandoc:
-        extensions:
-                - mathjax
-                - smart
+        skip: false
+        impose: false
+        output: ./tmp
+        flags: '--smart'
+        site_flags: '--toc'
+        outputs:
+                pdf: '--latex-engine=pdflatex'
 
